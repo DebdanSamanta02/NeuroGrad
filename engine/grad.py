@@ -116,7 +116,7 @@ class Value:
         return out
 
     def tanh(self):
-        #tanh(x) = [e^x - 1]/[e^x - 1] -> output between -1.0 and 1.0
+        #tanh(x) = [e^2x - 1]/[e^2x + 1] -> output between -1.0 and 1.0
 
         x = self.data
         t = math.exp(2 * x)
